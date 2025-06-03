@@ -37,6 +37,8 @@ Wiring Diagram
 Component	      Arduino Pin
 HM-10 TX	      2 (RX via SoftwareSerial)
 HM-10 RX	      3 (TX via SoftwareSerial)
+HM-10 VCC       5V
+HM-10 GND       GND
 L298N IN1    	  6
 L298N IN2	      7
 L298N ENA       (PWM)	10
