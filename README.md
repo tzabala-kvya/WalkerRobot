@@ -1,12 +1,17 @@
-Bluetooth-Controlled Two-Wheel Robot
+# Bluetooth-Controlled Two-Wheel Robot
 Author: Tristan Zabala
+
 Date: May 2025
+
 Platform: Arduino Uno
+
 Bluetooth Module: HM-10 (BLE)
+
 Motor Driver: L298N Dual H-Bridge
+
 Control App: Dabble (Gamepad Module)
 
-Overview
+## Overview
 This project enables Bluetooth control of a two-wheel robot using the Dabble mobile app and an HM-10 BLE module. It lets you drive the robot forward, backward, left, and right, and adjust its speed in real time. An emergency stop is also built in for safety.
 
 Features
@@ -26,7 +31,7 @@ Circle: Emergency stop (sets speed to 0)
 
 🔧 Uses PWM to vary motor speed
 
-Required Libraries
+## Required Libraries
 Dabble Library
 
 SoftwareSerial (included in Arduino IDE)
@@ -48,7 +53,7 @@ L298N ENB       (PWM)	9
 
 Note: Use a proper power supply for motors; do not power them directly from the Arduino.
 
-How to Use
+## How to Use
 Upload the code to your Arduino Uno.
 
 Open the Dabble app and navigate to the Gamepad module.
@@ -65,7 +70,7 @@ Adjust Speed: Modify baseSpeed to change the robot's default speed.
 
 Motor Logic: The setMotorDirection() function can be changed if your wiring requires reversing the polarity for proper motor direction.
 
-Troubleshooting
+## Troubleshooting
 
 Motors not turning? 
   - Make sure all motor wiring and the external power supply are properly connected and delivering sufficient voltage.
